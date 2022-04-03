@@ -1,0 +1,36 @@
+<?php global $prefix;
+if (!empty($prefix)) {
+    $parentPrefix = $prefix.'/';
+    $rootPrefix = $parentPrefix;
+} else {
+    $parentPrefix = '/';
+    $rootPrefix = '';
+} ?><!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="SHORTCUT ICON" href="bined.ico" />
+<link href="<?php echo $parentPrefix; ?>css/site.css" rel="stylesheet">
+<title>Voxella - Experimental Voxel Engine</title>
+</head>
+
+<body>
+<div id="name"><h1><a href="<?php echo $parentPrefix; ?>"><img src="<?php echo $parentPrefix; ?>images/voxella.png" alt="[Voxella]" title="Icon" width="48" height="48" style="vertical-align: text-top; margin-top: -7px;"/>&nbsp;Voxella - Experimental Voxel Engine</a></h1></div>
+<div id="divider"></div>
+
+<ul id="navmenu">
+  <li><div>Information</div>
+    <ul class="submenu">
+    <li><a href="<?php echo $rootPrefix; ?>?news">News</a></li>
+    <li><a href="<?php echo $rootPrefix; ?>?about">About</a></li>
+    <li><a href="<?php echo $rootPrefix; ?>?screenshots">Screenshots</a></li>
+    <li><a href="<?php echo $rootPrefix; ?>?downloads">Downloads</a></li>
+    </ul>
+  </li>
+  <li><div>Development</div>
+    <ul class="submenu">
+    <li><a href="<?php echo $rootPrefix; ?>?development">Development</a></li>
+    <li><a href="<?php echo $rootPrefix; ?>?source-codes">Source Codes</a></li>
+    </ul>
+  </li>
+</ul>
